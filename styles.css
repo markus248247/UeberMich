@@ -1,11 +1,11 @@
 body{
-     font-family: "Roboto", sans-serif, arial;
+    font-family: "Roboto", sans-serif, arial;
     font-size: clamp(1rem, 2vw, 2rem);
     margin: 0;
     display: flex;
 }
 
-header {
+main {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -15,31 +15,31 @@ header {
     z-index: 2;
 }
 
-.header-content {
+.main {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-header img{
+main img{
     position: relative; 
     z-index: 2;
     margin: 0;
 }
 
-header a{
+main a{
     margin: 40px 0 16px 0; /* Abstand nach oben/unten, aber nicht nach rechts */
     display: inline-block;
 }
 
-#head{
+#design{
     background-color: rgb(141, 148, 186);
     height: 150px;
     width: 100%;
     overflow: hidden;
 }
 
-header aside {
+main aside {
     margin: 0;
     align-items: flex-end;
     display: flex;
@@ -71,38 +71,38 @@ header aside {
 
 /* Link-ähnliches Label */
 .toggle-label {
-  display: inline-block;
-  color: black;
-  text-decoration: underline;
-  cursor: pointer;
-  font-weight: bold;
-  margin-bottom: 8px;
-  flex-direction: row-reverse;
-  z-index: 2;
-  text-decoration: none;
+    display: inline-block;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    margin-bottom: 8px;
+    flex-direction: row-reverse;
+    z-index: 2;
+    text-decoration: none;
 }
 
 /* Unsichtbare Checkbox */
 .toggle-checkbox {
-  display: none;
+    display: none;
 }
 
 /* Das aufklappbare Feld */
 .toggle-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s cubic-bezier(.4,0,.2,1), padding 0.4s;
-  background: rgb(141, 148, 186);
-  border-radius: 0 0 4px 4px;
-  padding-left: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(.4,0,.2,1), padding 0.4s;
+    background: rgb(141, 148, 186);
+    border-radius: 0 0 4px 4px;
+    padding-left: 0;
     margin-left: 0;
     list-style-position: inside;
 }
 
 /* Wenn geöffnet */
 .toggle-checkbox:checked + .toggle-content {
-  max-height: 300px; 
-  padding: 16px 0;
+    max-height: 300px; 
+    padding: 16px 0;
 }
 
 .toggle-content ul {
