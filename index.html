@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 
 <head>
     <meta charset="UTF-8">
@@ -8,18 +8,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
-    <svg class="svg-curve" viewBox="0 0 1000 150" preserveAspectRatio="none">
-        <path d="M0,150 Q500,0 1000,150 L1000,0 L0,0 Z" />
-    </svg>
     <title>Über mich</title>
 </head>
 
 <body>
     <div id="design"></div>
+    <svg class="svg-curve" viewBox="0 0 1000 150" preserveAspectRatio="none">
+        <path d="M0,150 Q500,0 1000,150 L1000,0 L0,0 Z" />
+    </svg>
     <main>
-        <a href="https://github.com/markus248247">
-            <img src="github.svg" alt="GitHub account">
-        </a>
+        <section id="aboutMe">
+            <h1>~ whoami</h1>
+            <p>Ich bin Markus. Anwendungsentwickler aus Wuppertal.
+                Zurzeit bin ich bei der Firma Brangs + Heinrich angestellt. Dort entwickle ich
+                in einem Team das ERP eNVenta in C# mit Framework Studio weiter. Mein Schwerpunkt liegt auf dem
+                Vertrieb. Neu hinzu gekommen ist die Arbeit an unserem Webshop in Shopware. In meiner
+                Freizeit beschäftige ich mich mit Webentwicklung.
+            </p>
+        </section>
         <aside>
             <label class="toggle-label" for="toggle-kenntnisse">Kenntnisse</label>
             <input type="checkbox" id="toggle-kenntnisse" class="toggle-checkbox">
@@ -35,16 +41,14 @@
             </div>
         </aside>
     </main>
-    <section id="aboutMe">
-        <h1>~ whoami</h1>
-        <p>Ich bin Markus. Anwendungsentwickler aus Wuppertal.
-            Zurzeit bin ich bei der Firma Brangs + Heinrich angestellt. Dort entwickle ich
-            in einem Team das ERP eNVenta in C# mit Framework Studio weiter. Mein Schwerpunkt liegt auf dem
-            Vertrieb. Neu hinzu gekommen ist die Arbeit an unserem Webshop in Shopware. In meiner
-            Freizeit beschäftige ich mich mit Webentwicklung.
-        </p>
-    </section>
-
+    <div id="socialMedia">
+        <a href="https://github.com/markus248247" target="_blank">
+            <img src="github.svg" alt="GitHub Account Logo">
+        </a>
+        <a href="https://www.linkedin.com/in/markus-p%C3%B6ppinghaus-90a1b4324/" target="_blank">
+            <img src="linkedin.svg" alt="Linkedin Account Logo">
+        </a>
+    </div>
 </body>
 
 </html>
