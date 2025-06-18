@@ -1,11 +1,13 @@
 /* roboto-regular - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: url('fonts/roboto-v48-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+    src: url('fonts/roboto-v48-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
 body {
     font-family: "Roboto", Arial, sans-serif;
@@ -61,11 +63,16 @@ main aside {
 .toggle-label {
     display: inline-block;
     color: black;
-    text-decoration: underline;
     cursor: pointer;
     font-weight: bold;
     margin-bottom: 8px;
     z-index: 2;
+    transition: transform 0.3s cubic-bezier(.4, 0, .2, 1);
+}
+
+.toggle-label:hover,
+.toggle-label:focus {
+    transform: translateY(4px);
 }
 
 .toggle-checkbox {
@@ -76,7 +83,7 @@ main aside {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s cubic-bezier(.4, 0, .2, 1), padding 0.4s;
-    background: rgb(141, 148, 186);
+    background: transparent;
     border-radius: 0 0 4px 4px;
     padding-left: 0;
     margin-left: 0;
@@ -114,7 +121,6 @@ main aside {
     main {
         flex-direction: column;
         margin: -30px 8px 0 8px;
-        /* Weniger Abstand zum Rand */
     }
 
     main aside {
@@ -131,4 +137,3 @@ main aside {
     }
 
 }
-
