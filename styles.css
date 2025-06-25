@@ -147,3 +147,10 @@ main aside {
         z-index: 1000;
     }
 }
+
+@media (max-width: 800px) and (orientation: landscape) {
+    #socialMedia {
+        position: static;
+        padding: 12px 0;
+    }
+}
