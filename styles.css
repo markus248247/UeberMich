@@ -105,35 +105,35 @@ main aside {
     position: fixed;
     left: 0;
     right: 0;
-    bottom: 32px;
+    bottom: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
-}
-
-#socialMedia img {
-    object-fit: contain;
-    margin: 60px 8px 0 8px;
+    margin: 0;
+    padding: 16px 0;
+    z-index: 100;
 }
 
 @media (max-width: 800px) {
+    body {
+        align-items: stretch;
+    }
+
     main {
         flex-direction: column;
-        margin: -30px 8px 0 8px;
+        margin: 0 8px;
+    }
+
+    #aboutMe {
+        width: 100%;
+        margin: 0;
     }
 
     main aside {
         position: static;
         width: 100%;
-        margin: 24px 0 0 8px;
+        margin: 24px 0 0 0;
         right: auto;
         top: auto;
     }
-
-    #aboutMe {
-        width: 100%;
-        margin: 0 0 0 8px;
-    }
-
 }
